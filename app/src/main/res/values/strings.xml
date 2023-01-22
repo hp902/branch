@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Branch</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="login">Login</string>
+    <string name="reply">Reply</string>
+    <string name="enter_message">Enter Message</string>
+    <string name="send">Send</string>
+
+    <string name="agent_id">Agent Id:- %s,</string>
+    <string name="message_body">&lt;b>Body:-&lt;/b> %s</string>
+    <string name="user_id">&lt;b>User ID:-&lt;/b> %s</string>
+    <string name="created_at">&lt;i>%s&lt;/i></string>
+</resources>

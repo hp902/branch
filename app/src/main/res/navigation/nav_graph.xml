@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.branch.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_messageFragment"
+            app:destination="@id/messageFragment"
+            app:popUpTo="@id/messageFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.branch.ui.message.MessageFragment"
+        android:label="MessageFragment"
+        tools:layout="@layout/fragment_message">
+        <action
+            android:id="@+id/action_messageFragment_to_singleThreadFragment"
+            app:destination="@id/singleThreadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/singleThreadFragment"
+        android:name="com.example.branch.ui.message.thread.SingleThreadFragment"
+        android:label="SingleThreadFragment"
+        tools:layout="@layout/fragment_single_thread" />
+
+</navigation>
